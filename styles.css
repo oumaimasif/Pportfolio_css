@@ -1,0 +1,103 @@
+/*  Styles pour le body*/
+body{ 
+      font-family: 'roboto';
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(226, 239, 227);
+}
+
+/* Modifier l'affichage de la barre de navigation */
+#navbar { 
+    background-color: papayawhip;   
+}
+#navbar li {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    font-size: 30px;
+
+}
+.Menu{    
+    margin: 0;
+    padding: 0;
+}
+li a {  
+    display: block; 
+    text-align: center;
+    color: #333;
+    padding: 14px 16px;  
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(39, 150, 139);
+    color:white;
+}
+.fixe a {
+    background-color: rgb(39, 150, 139);
+    color:rgb(255, 255, 255);
+    border-left: 6px solid red;
+ }
+
+/*Modifier l'affichage des sections*/
+h3,h2{
+    color: rgb(39, 150, 139); 
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+#expériences a {
+    margin: 0; 
+    padding: 0; 
+    display: inline;
+    color: black;
+    font-weight: bold;
+}
+#expériences a:hover{
+    background-color: rgb(89, 176, 238);
+    color: white;
+    text-decoration: underline;
+}
+/*Ajouter des modification sur le tableau*/
+table{    
+    width: 100%;
+    font-size: 18px;
+    display:inline-table;
+    border-collapse:collapse; 
+}
+tr th{
+    background-color: rgb(89, 176, 238);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.number{text-align: center;}
+/*améliorer l'affichage de la form*/
+.f_style {
+    width: 100%;
+    padding:5px ;
+    margin: 15px;
+  }
+button{
+    padding:10px 5px ;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #1d970d;
+    color: white;
+}
+button:hover {
+    background-color: #128303;
+}
+  /* footer*/
+footer{
+    background-color: papayawhip;   
+    color:black;
+    padding: 14px 16px;  
+
+}
+#footer a:hover {
+  color: rgb(255, 0, 0);
+}
