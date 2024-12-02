@@ -7,12 +7,7 @@
         color: #2C2C2C;
         background-color: rgba(228, 235, 233, 0.658);
         background-repeat: repeat;
-
     }
-    /*Couleur principale : Violet vif (#6A0572)
-Couleur secondaire : Jaune pastel (#FDFD96)
-Accent : Bleu turquoise (#36C2CF)
-Texte : Gris anthracite (#2C2C2C)*/
     
   /* Modifier l'affichage de la barre de navigation */
         #navbar {
@@ -60,7 +55,6 @@ Texte : Gris anthracite (#2C2C2C)*/
     width: 60%;
     margin: 0 auto;
     font-size: 20px; 
-    /*text-align: center;*/
      }
     #expériences a {  
         text-decoration: none;
