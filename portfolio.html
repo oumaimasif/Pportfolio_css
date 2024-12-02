@@ -13,32 +13,31 @@
             <nav id="navbar">
                     <ul class="Menu">
                         <li class="fixe"> 
-                            <a href="/home">Home</a>
+                            <a href="#"><strong>Home</strong></a>
                         </li>
                         <li> 
-                            <a href="#about">About</a>
+                            <a href="#about"><strong>About</strong></a>
                         </li>
                         <li> 
-                            <a href="#work">Work</a>
+                            <a href="#work"><strong>Work</strong></a>
                         </li>
                         <li> 
-                            <a href="#resume">Resume</a>
+                            <a href="#resume"><strong>Resume</strong></a>
                         </li>
                         <li> 
-                            <a href="#contact">Contact</a>
+                            <a href="#contact"><strong>Contact</strong></a>
                         </li>
                     </ul>
             </nav>
-            <h1 style="color: rgb(0, 0, 0);text-align: center; "> Mon Portfolio</h1>
         </header>
         <main>
-
+            <h1 style="color: rgb(157, 50, 50) "> Mon Portfolio</h1>
         <div id="body">
             <section id="about">
                 <h3>A propos de moi </h3>
                 <p> Je suis <i> Oumaima Sif </i>, j'ai un diplôme en développement informatique obtenu en 2019. 
                     Après mes études, j'ai acquis une expérience significative en service clientèle, 
-                    notamment chez Majorel et Moropcall, où j'ai eu l'occasion de développer mes compétences en gestion de la relation client </p>
+                    notamment chez Majorel et Moropcall, où j'ai eu l'occasion de développer mes compétences en gestion de la relation client. </p>
             </section>
             <section id="work">
                 <h3>Expériences professionnelles </h3>
@@ -53,40 +52,46 @@
                 </ol>
             </div>
             </section>
+                        <!--effectuer des image avec un descriptive -->
+
             <section id="resume">
-                <h3> Formation </h3>
-                 <table border="2px">
-                   <tr> 
-                    <th>Année</th>
-                    <th>Diplôme</th>
-                   </tr>
-                   <tr>
-                     <td class="number">2019</td>
-                     <td>Diplôme en Développement Informatique</td>
-                   </tr>
-                   <tr>
-                    <td class="number">2020</td>
-                    <td>Formation en Français à Institut Français de Casablanca </td>
-                   </tr> 
-                </table>
+                <h3> Formations </h3>
+            <div class="f_images">
+              <div class="photo one">
+                <img src="https://storage.letudiant.fr/mediatheque/letudiant/1/2/2624012-icon-physique-chimie-766x438.jpg" alt="Icône de physique et chimie" >
+                <p> Baccalauréat en Sciences Physiques Lycée Addakhela, Casablanca - 2016</p>
+              </div>
+              <div class="photo two">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20210205/pngtree-technology-computer-business-office-background-image_543978.jpg" alt="Ecran d'ordinateur" >
+                <p>Institut Spécialisé de Technologie Appliquée de Gestion, Casablanca - 2016 - 2019</p>
+              </div>
+              <div class="photo three">
+                <img src="https://lh6.googleusercontent.com/proxy/M_eWwM4EHg_J9hWLhj1CmpOIt_a7-uwBNXq1EmfH8L8tzlvSI3xcnoF8rna6iDqJv2tdjb2nF2OHypUcl2fgdfof1gnDzoTB7L61F8zbuMeUs_d66fO-2UlOoIQRv2naOKw" alt=" Livres pour apprentissage de la langue " >
+                <p> Institut Français de Casablanca (Niveau B1) - 2020</p>
+              </div>
+           </div>
             </section>
+ 
             <section id="contact">
                 <h3>Contactez-moi</h3>
-                <form>
-                    <label>Nom :</label>
-                    <input class="f_style" id="nom" name="nom" type="text" placeholder="Tapez votre nom ici" required>
-                    
-                    <label>Email :</label>
-                    <input class="f_style" id="email" name="email" type="email" placeholder="Tapez votre email ici" required>
+                <form id="formstyle">
+                    <div class="form_container">
+                        <label for="nom">Nom :</label>
+                        <input class="f_style" id="nom" name="nom" type="text" placeholder="Tapez votre nom ici" required>
+                    </div>
+                    <div class="form_container">
+                        <label for="email">Email :</label>
+                        <input class="f_style" id="email" name="email" type="email" placeholder="Tapez votre email ici" required>
+                    </div>
+                    <div class="form_container">
+                        <label for="message">Message :</label>
+                        <textarea class="f_style" id="message" name="message" rows="5" cols="40" placeholder="Laissez votre commentaire ici"></textarea>
+                    </div>
 
-                    <label>Message :</label>
-                    <textarea class="f_style" id="message" name="message" rows="5" required></textarea>
-                    <button type="submit"> Envoyer </button>
+                    <div id="submit">
+                        <input type="submit" value="Envoyer">
+                    </div>
                 </form>
-            </section>
-            <section id="video">
-                <h2>Vidéo YouTube</h2>
-                <iframe width="500" height="300" src="https://www.youtube.com/embed/F-DX_ZFpyyQ" title="5 meilleures applications pour créer un cv "></iframe>
             </section>
         </div>
         </main>
