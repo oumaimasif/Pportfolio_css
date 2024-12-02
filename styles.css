@@ -1,103 +1,163 @@
-/*  Styles pour le body*/
-body{ 
-      font-family: 'roboto';
-      margin: 0px;
-      padding: 0px;
-      background-color: rgb(226, 239, 227);
-}
+   /*  Styles pour le body*/
 
-/* Modifier l'affichage de la barre de navigation */
-#navbar { 
-    background-color: papayawhip;   
-}
-#navbar li {
-    padding: 0px;
-    margin: 0px;
+  body{
+        margin: 0;
+        font-family: 'roboto', sans-serif;
+        line-height: 1.6;
+        color: #2C2C2C;
+        background-color: rgba(228, 235, 233, 0.658);
+        background-repeat: repeat;
+
+    }
+    /*Couleur principale : Violet vif (#6A0572)
+Couleur secondaire : Jaune pastel (#FDFD96)
+Accent : Bleu turquoise (#36C2CF)
+Texte : Gris anthracite (#2C2C2C)*/
+    
+  /* Modifier l'affichage de la barre de navigation */
+        #navbar {
+        background-color: #80230c89;
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        text-align: center;
+        line-height: 2.7em;
+    }
+    
+    #navbar .Menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #navbar .Menu li {
     display: inline-block;
-    font-size: 30px;
+    margin-right: 15px;
+   }
 
-}
-.Menu{    
-    margin: 0;
-    padding: 0;
-}
-li a {  
-    display: block; 
-    text-align: center;
-    color: #333;
-    padding: 14px 16px;  
+    #navbar .Menu a {
     text-decoration: none;
-}
-li a:hover {
-    background-color: rgb(39, 150, 139);
-    color:white;
-}
-.fixe a {
-    background-color: rgb(39, 150, 139);
-    color:rgb(255, 255, 255);
-    border-left: 6px solid red;
- }
-
-/*Modifier l'affichage des sections*/
-h3,h2{
-    color: rgb(39, 150, 139); 
-}
-
-section{
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
-    background-color: white;
-}
-#expériences a {
-    margin: 0; 
-    padding: 0; 
-    display: inline;
-    color: black;
-    font-weight: bold;
-}
-#expériences a:hover{
-    background-color: rgb(89, 176, 238);
-    color: white;
-    text-decoration: underline;
-}
-/*Ajouter des modification sur le tableau*/
-table{    
-    width: 100%;
-    font-size: 18px;
-    display:inline-table;
-    border-collapse:collapse; 
-}
-tr th{
-    background-color: rgb(89, 176, 238);
-    color: white;
+    color: #1a1a1a;
     padding: 10px;
-    text-align: center;
-}
-.number{text-align: center;}
-/*améliorer l'affichage de la form*/
-.f_style {
-    width: 100%;
-    padding:5px ;
-    margin: 15px;
-  }
-button{
-    padding:10px 5px ;
-    margin-top: 15px;
-    border-radius: 5px;
-    background-color: #1d970d;
-    color: white;
-}
-button:hover {
-    background-color: #128303;
-}
-  /* footer*/
-footer{
-    background-color: papayawhip;   
-    color:black;
-    padding: 14px 16px;  
+    font-size: 1.5em;
+    }
+    #navbar .Menu a:hover {
+        background-color: rgba(131, 95, 95, 0.418);
+        color: #3b3a3a;
+        border-radius: 5px;
+    }
+    
+    
+    h1{
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;/*pour afficher le titre */
+    }
+    /*Modifier l'affichage des sections*/
+    section {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px; 
+    /*text-align: center;*/
+     }
+    #expériences a {  
+        text-decoration: none;
+        color: #383838;
+    }  
+    #expériences a:hover{
+    color: cadetblue;
+    }
+    /* Images avec leurs descriptive */
+    .f_images{
+        text-align: center;
+    }
+    .photo img{ 
+        display:block;
+        width:200px;
+        height: 130px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .photo{
+        display: inline-block;
+        width: 40%;
+        background-color: #eed6ae;
+        border-radius: 30%;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+        vertical-align: top;
+        margin: 10px;
+    }
 
-}
-#footer a:hover {
-  color: rgb(255, 0, 0);
-}
+    .photo p{
+        font-size: 16px;
+        padding: 15px;
+        height: 80px;
+     
+    }
+    /*améliorer l'affichage de la form*/
+
+    .form_container{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+
+    }
+    label{  
+        display: block;
+        color: #1a1a1a;
+    }
+
+    .form_container input,textarea{
+        width: 80%;
+        line-height: 2.6em;
+        border-radius:5px;
+        border: none;
+        font-size: 16px;  
+     }
+     input,textarea[class="f_style"]
+     {
+        background-color: #000000d2;
+     }
+     .f_style::placeholder {
+        color: rgba(247, 247, 247, 0.892); 
+    }
+    #submit input{
+        display: block;
+        background-color:#02fc62;
+        color: white;
+        width: 50%;
+        margin: 0 auto;
+        line-height: 2.6em;
+        border-radius:5px;
+        border: none;
+        font-size: 20px; 
+    }
+    #submit input:hover {
+        background-color: #218838; 
+    }
+      /* footer*/
+      #footer {
+        background-color: #80230ce5;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 1.5em;
+    }
+    
+    
+    #footer a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+    
+    #footer a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+    
+    
+    
